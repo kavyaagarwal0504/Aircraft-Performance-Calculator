@@ -1,1 +1,13 @@
-
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aircraft Performance Simulator</title><script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script><link rel="stylesheet" href="style.css"></head>
+<body><header><small>AEROSPACE ENGINEERING PROJECT</small><h1>Aircraft Performance Simulator</h1><p>Python + Flask backend · Interactive Plotly dashboard</p></header>
+<main><section class="panel"><h2>Aircraft Inputs</h2><div class="inputs">
+<label>Mass (kg)<input id="mass" value="1200" type="number"></label><label>Wing Area (m²)<input id="wing_area" value="16" type="number"></label>
+<label>CL<input id="CL" value="0.8" type="number" step=".01"></label><label>CD<input id="CD" value=".04" type="number" step=".01"></label>
+<label>CLmax<input id="CL_max" value="1.5" type="number" step=".01"></label><label>Thrust (N)<input id="thrust" value="5000" type="number"></label>
+<label>Velocity (m/s)<input id="velocity" value="60" type="number"></label><label>Air Density (kg/m³)<input id="rho" value="1.225" type="number" step=".001"></label>
+</div><button onclick="run()">Run Simulation</button><span id="status"></span></section>
+<section id="metrics" class="metrics"></section><section class="dashboard">
+<div id="g1"></div><div id="g2"></div><div id="g3"></div><div id="g4"></div><div id="g5"></div><div id="g6"></div>
+<div id="g7"></div><div id="g8"></div><div id="g9"></div><div id="g10"></div><div id="g11"></div><div id="g12"></div></section></main>
+<script src="app.js"></script></body></html>
